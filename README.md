@@ -1,6 +1,6 @@
 # 🛠️ Cloud-Native Microservices Application with gRPC, Istio, mTLS & Observability
 
-A production-grade, Kubernetes-based microservices application consisting of 10+ gRPC services, secured with strict mutual TLS (mTLS), monitored using Prometheus and Grafana, and deployed on a private Amazon EKS cluster. The infrastructure is fully automated using Terraform and the application is exposed securely through a custom domain: **[anuraghatole.me](https://anuraghatole.me)**.
+A production-grade, Kubernetes-based microservices application consisting of 10+ micro-services, secured with strict mutual TLS (mTLS), monitored using Prometheus and Grafana, and deployed on a Amazon EKS cluster. The infrastructure is fully automated using Terraform and the application is exposed securely through a custom domain: **[anuraghatole.me](https://anuraghatole.me)**.
 
 ---
 
@@ -18,8 +18,8 @@ This project simulates a real-world cloud-native architecture where services com
 - 🔒 **Istio service mesh** managing traffic routing, load balancing, and advanced failure recovery.
 - 🔐 **Strict mutual TLS (mTLS)** enabled between all services to enforce encrypted, authenticated communication.
 - 📈 **Integrated observability** with Prometheus, Grafana, and Kiali to monitor real-time metrics, traffic flows, and service health.
-- ☁️ **Production-ready deployment** on a private EKS cluster with network isolation and secure traffic flow.
-- 🛡️ **Health checks, circuit breaking, and retry logic** implemented for resilient service behavior.
+- ☁️ **Production-ready deployment** on a EKS cluster with network isolation and secure traffic flow.
+- 🛡️ **Health checks, and retry logic** implemented for resilient service behavior.
 - 🌐 **Exposed frontend via Istio Ingress Gateway** mapped to a custom domain with load balancing.
 - 🧱 **Infrastructure provisioned with Terraform** — from VPC to EKS, subnets, security groups, and routing.
 
@@ -92,15 +92,15 @@ It simulates a real startup-grade backend infrastructure. Here's what the system
 - 🛰️ **Kiali** visualizes real-time service mesh topology and traffic flow
 - ✅ Combined observability stack reduces debugging time by over **60%**
 
-![Screenshot from 2025-05-19 23-34-51](https://github.com/user-attachments/assets/64e42515-ace0-4887-a17a-559e457102cb)
-![Screenshot from 2025-05-19 23-35-28](https://github.com/user-attachments/assets/bf6c81b6-3b24-42a9-9771-44ce76907b61)
-![Screenshot from 2025-05-19 23-35-13](https://github.com/user-attachments/assets/744ce3c8-24a4-43ac-8b15-d48e22528cba)
+![Screenshot from 2025-05-19 23-34-51](https://github.com/user-attachments/assets/c76e248c-e094-42a4-b009-ab338b57fe55)
+![Screenshot from 2025-05-19 23-35-28](https://github.com/user-attachments/assets/90b7207d-ff29-4362-b5c6-b3413d9d2a54)
+![Screenshot from 2025-05-19 23-35-13](https://github.com/user-attachments/assets/2952e7b7-d8c9-4b27-9d41-e30d69c22a64)
 
 ---
 
 ## ✅ Performance Gains
 
-- ⚡ Reduced gRPC communication latency by **40%** under concurrent load
+- ⚡ Reduced communication latency by **40%** under concurrent load
 - 🔐 Achieved **zero-trust communication** with 100% encryption via mTLS
 - 🛠️ Reduced manual traffic config errors by **90%** using VirtualService abstraction
 - 📉 Enhanced resilience with retry logic and circuit breaking — reducing service failure impact by **30%**
